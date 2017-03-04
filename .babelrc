@@ -1,0 +1,9 @@
+{
+	"presets": [
+		"stage-0",
+		"latest",
+		"@ava/stage-4",
+		["@ava/transform-test-files", {"powerAsssert": false}]
+	],
+	"plugins": ["transform-class-properties"]
+}

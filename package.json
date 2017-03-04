@@ -1,0 +1,30 @@
+{
+  "name": "bb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava test/*.js",
+    "start": "babel-node src/Singleton.js",
+    "build": "babel src -d build",
+    "test:watch": "ava test/*.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.18.2",
+    "babel-cli": "^6.23.0",
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-preset-env": "^1.1.11",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0"
+  },
+  "ava": {
+    "babel": "inherit"
+  },
+  "dependencies": {
+    "@ava/babel-preset-stage-4": "^1.0.0",
+    "@ava/babel-preset-transform-test-files": "^2.0.1"
+  }
+}
